@@ -1,0 +1,79 @@
+09/12/2012
+Name: Quan Fang
+In C arrays, there are no bounds checking, no initializations. 
+What is a segmentation fault ? Attempted access to an invalid memory location, which means that address may exist but no accessing permission; or that address makes no sense.
+
+In C functions, arrays are passed by address. Generally, you can take the address of any object, just use the magical operator &
+
+C has its own syntax for declaring pointers, pointers are first-class citizens,
+(1) They can be passed to functions;
+(2) They can be stored in arrays and other data structures;
+(2) They can be returned by functions.
+
+All objects declared in functions, including arguments and local variables, are allocated on the stack. They are "deallocated" after the function returns. scanf is for reading data, their arguments must be addresses, because scanf is a function. If read in values, it's gone after the scanf function return. Never return an address to any of them after the function call ???
+
+Global variables are initialized. 
+
+09/14/12
+String constants are stored in an area of memory that's made read-only, thus any attempt to modify them is doomed. 
+for example, case 1 is allowed, case 2 is not 
+(1)
+char s[] = "abcd";
+s[1] = 'e';
+(2)
+char *s  = "abcd";
+s[1] = 'e';
+
+Misc about struct array
+struct ComplexNumber *jp[10];		==> This is an array of pointers; Subscripting has a higher precedence than the "*" operator
+struct ComplexNumber jp1[10];
+struct ComplexNumber *jp = jp1;		==> This is a pointer to an array
+
+PASS BY REFERENCE 
+In C only:
+	func (type *a, type *b);
+In C++ only:
+	func (type &a, type &b)
+
+Pointers to functions
+	int addition (int a, int b){return a+b;}
+	int (*addPntr)(int,int) = &addition;	// addPntr is the pointer to this function: addition()
+	addPntr(10,20);
+
+** Still not very clears about other ways to use them
+
+Pointers
+swap((int *) &x, (int *) &y)  means what ?!!
+
+int *x; void *y;
+x = y; y = x; //legal
+*y is illegal !!! Must dereference a pointer with a useful pointee type
+
+int  A[3]; // an array of 3 ints 
+int *A[3]; // an array of 3 int* s	
+int *f (int *a) {...}	// a function, taking in a int *, returns a int *
+int *(*f)(int *a)// a pointer to a function, that taking in an int *, returns an int*
+int *(*f[3])(int *a)// an array of func pointers. 
+
+The pointers are very complicated.
+
+09/20/2012
+The array itself can't remember the size, in order to get the length of array
+(1) you may use the sizeof function
+or 
+(2) Pass around the array length with array itself.
+
+
+The main function of a C program uses a 2D array to hold the program arguments. A char* is equivalent to a string(or an array of chars), so a char** is an array of strings or a 2D array of chars.
+
+
+
+
+
+
+
+
+
+
+
+

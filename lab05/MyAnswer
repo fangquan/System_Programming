@@ -1,0 +1,13 @@
+Rotate:
+(1) u16, it's faster because it needs fewer loop condition checking, less overhead. Though it makes the program larger.
+(2) b16, split the array so that it will fit the catch. Row-major order (in src array) follows spatial locality. Destination is always column-major order, and cache has enough space for fitting all the rows, each block will have 16*1 misses, when accessing dest array.
+(3) Recursive call, the subsize is always <= 16*16, exactly like blocking.
+
+Invert
+The optimized version, 
+(1) using inline function, compiler treat the inline function lie macros, like "direct copying the code into callee". The inline function is not very big nor complex, so it should be fine. 
+(2) Ternary operator avoids branching.
+
+Reverse
+(1) String length is loop invariant, just need to calculate once. Code motion
+

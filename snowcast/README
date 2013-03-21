@@ -1,0 +1,31 @@
+Project: snowcast
+Author: Quan Fang
+Email: fangquans@gmail.com
+
+The structure of my program:
+Step 1, Set up socket for TCP
+Step 2, Set up socket for UDP, bind the UDP socket with localhost and udpport
+Step 3, Find the Internet address of the server and connect TCP to the server
+Step 4, send HELLO and receive WELCOME, setting handshake
+Step 5, 
+while (1) {
+	if (stdin) {
+		user interaction;
+	}
+	if (tcpsocket) {
+		receive server announcement and invalid command feedback
+	}
+	if (udpsocket) {
+		receive music data
+	}
+}
+
+
+Usage:
+Running the server:
+	cs033_snowcast_server port /course/cs033/pub/snowcast/*
+Running the client:
+	./snowcast_client servername serverport udpport 2032 | mpg123 -
+
+
+

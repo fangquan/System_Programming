@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="51">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="lab08" displayName="lab08" projectFiles="true">
+      <itemPath>../../lab08/display.c</itemPath>
+      <itemPath>../../lab08/display.h</itemPath>
+      <itemPath>../../lab08/memtop.c</itemPath>
+      <itemPath>../../lab08/support.c</itemPath>
+      <itemPath>../../lab08/support.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>lab08_1-Makefile.mk</itemPath>
+      <itemPath>/gpfs/main/home/qfang/course/cs033/lab08/Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../../lab08</Elem>
+  </sourceRootList>
+  <projectmakefile>lab08_1-Makefile.mk</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>/gpfs/main/home/qfang/course/cs033/lab08</buildCommandWorkingDir>
+          <buildCommand>make -f Makefile</buildCommand>
+          <cleanCommand>make -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+        <requiredProjects>
+        </requiredProjects>
+      </makefileType>
+      <item path="../../lab08/display.c">
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../../lab08/display.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../../lab08/memtop.c">
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../../lab08/support.c">
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../../lab08/support.h">
+        <itemTool>3</itemTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

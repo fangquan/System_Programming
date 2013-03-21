@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="51">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="shell_2" displayName="shell_2" projectFiles="true">
+      <itemPath>../basic_shell.c</itemPath>
+      <itemPath>../basic_shell.h</itemPath>
+      <itemPath>../jobs.c</itemPath>
+      <itemPath>../jobs.h</itemPath>
+      <itemPath>../Makefile</itemPath>
+      <itemPath>../sh.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>/gpfs/main/home/qfang/course/cs033/shell_2/Makefile</itemPath>
+      <itemPath>shell_2_1-Makefile.mk</itemPath>
+    </logicalFolder>
+    <itemPath>../test.c</itemPath>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>..</Elem>
+  </sourceRootList>
+  <projectmakefile>shell_2_1-Makefile.mk</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>/gpfs/main/home/qfang/course/cs033/shell_2</buildCommandWorkingDir>
+          <buildCommand>make -f Makefile</buildCommand>
+          <cleanCommand>make -f Makefile clean</cleanCommand>
+          <executablePath>../sh</executablePath>
+        </makeTool>
+        <requiredProjects>
+        </requiredProjects>
+      </makefileType>
+      <item path="../Makefile">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../basic_shell.c">
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../basic_shell.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../jobs.c">
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../jobs.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../sh.c">
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../test.c">
+        <itemTool>0</itemTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

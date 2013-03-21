@@ -1,0 +1,11 @@
+Hey CS033,
+
+Here are some things that you will hopefully find helpful for Buffer:
+
+First: objdump is a program which you can use to view the assembly code of an object file.  Run
+objdump -d buffer > obj.txt
+to disassemble the contents of the Buffer executable into obj.txt.  That file will then contain each function's name, with all of its instructions, and the addresses of those instructions.  It'll make a great reference as you step through gdb and concoct exploit strings.
+
+Second: si is a gdb command which you can use to step over a single x86 instruction.  Step and next won't do this sometimes, but si never fails to do so.  Use this command well.
+
+Have a pleasant Columbus day!

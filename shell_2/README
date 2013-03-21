@@ -1,0 +1,67 @@
+(1) Running the program
+make all
+(2) There are 3 components:
+	sh.c, jobs.c basic_shell.c
+(2.1) basic_shell.c mostly contains the argument parsing stuff.
+    good_redirection()      judges redirection validness;
+    which_redirection()     returns redir type, 0 for input, 1 for output, 2 for append
+    no_redirection_file()   decides redir existence.
+    parseline()             parses the command line and builds the argv array.
+    background_job()        returns 1 if background, remove the "&" sign
+
+(2.2) sh.c works on installing signal handlers (termination, suspending, quit and sigchld), and busy loop.
+      read_and_echo() is the main loop reading commands
+      install_handler() installs each of 4 handlers
+      built_in_commands() adds "fg" and "bg", besides "exit", "cd", "rm", "ln"
+
+jobs.c is provided.
+
+
+======================== Program structure ==========================
+=====================================================================
+
+
+int main () {
+    Install_handlers();
+    while(1) {
+        Parseline();
+        childpid = fork();
+        if (childpid == 1) {
+            //child process;
+        }
+        else {
+            //parent
+            if (fg) {
+                // busy loop waits
+                while(fg_global_pid) {
+                       sleep(1);
+                }
+            else {
+                // no waiting
+            }
+            }
+        }
+    }
+}
+
+
+======================== A Problem ==========================
+=============================================================
+define _POSIX_SOURCE conflicts with signal handlering (action.sa_flags = SA_RESTART;)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

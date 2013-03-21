@@ -1,0 +1,51 @@
+Name:	Quan Fang
+Email:	quan_fang@brown.edu
+FYI:	Part 2 working, part 3 not finished yet.
+
+A.  Program Structure
+(1) Multi-client, go-stop command
+int main(int argc, char **argv) {
+	db = db_new();
+
+        while (1) {
+		if ("stop command") {
+                    if_stopped = 1;
+                }
+                if ("go command") {
+                    if_stopped = 0;
+                    pthread_cond_broadcast(&clientcond);
+                }
+                else {
+                    client_new(active_threads);
+                }
+        }
+        if ( active_threads == 0) {
+            db_delete(db);
+        }
+        free(scriptname);
+        pthread_exit(&ret);
+}
+
+void *run_client(void *client) {
+	while(get_command(((Client *)client)->window, command)) {
+		wait_for_true (); // Thread went to sleep, if is_stopped true
+		process_command(command, response);
+		if(!send_response(((Client *)client)->window, response))
+			break;
+	}
+}
+
+(2) Fine-Grained Locking
+Main work is on the search function.Also need to modife db_add, db_remove, db_query and dbnode_delete functions. 
+The principles are:(1) After a db_add, db_remove, db_query call, we shouldn't leave any lock on the tree.That requires us 
+to unlock everything before return from such a function call; (2) For the search function, if a node found, return both of 
+this node and its parent locked; if a node is not found (NULL), return with parent locked. (3) If parentpp set NULL, parent
+unlocked.
+
+(3) Cancellation part is not working properly. 
+The pthread array is not able to correctly delete thread id.
+
+
+
+
+

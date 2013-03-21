@@ -1,0 +1,53 @@
+(1) The general structure of my program is
+
+Prompt and read command;
+parse command;
+execute commands;
+	(1) If builtin_command, syscall directly
+	(2) Otherwise, fork() and execv();
+
+int main(int argc, char** argv) {
+    while(1)
+    {
+        // Print Prompt, terminal I/O and take commands
+        char cmdline[MAXLINE];
+        #ifndef NO_PROMPT
+        write(STDIN_FILENO, path, strlen(path));        // Write to file  descriptor
+        #endif 
+        read(STDIN_FILENO, cmdline, sizeof (cmdline));  // Read from file descriptor
+
+        // Evaluate, parse cmdline, and execute
+        char *argv[MAXARGS];    // Argument list for execve()
+        char buf[MAXLINE];      // Holds modified command line
+        pid_t childpid;
+        strcpy(buf, cmdline);
+
+        // parsing include split and redirection
+        if (!good_redirection(buf, inputfile, outputfile, appendfile))
+        {continue;}
+        parseline(buf, argv); // char **argv == char *argv[]
+
+        if (!builtin_command(argv)) {
+            childpid = fork();
+            // In the child process
+            if (childpid == 0) {
+                open syscall if necessary
+                execv(argv[0], argv);
+            }
+            else {
+                wait(childpid);
+            }
+        }
+    }
+}
+    return 0;
+}
+
+
+
+
+
+
+
+
+

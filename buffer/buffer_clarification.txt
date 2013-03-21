@@ -1,0 +1,28 @@
+Hey everybody,
+
+Two quick clarifications for the Buffer assignment.  First, your exploit strings should not cause segmentation faults.  The following output of the buffer program is not valid:
+
+Userid: jcarberr
+Cookie: 0x12345678
+Type string: <string>
+Grrr!: getbuf returned 0x12345678
+VALID
+NICE JOB!
+Ouch!: You caused a segmentation fault!
+Better luck next time
+
+More generally, it is not sufficient to receive the VALID NICE JOB! confirmation.  If your goal is to get the program to set or return a particular value, it must actually do this!  For example, in the level where your goal is to cause getbuf() to return the cookie value, the following output is possible:
+
+Userid: jcarberr
+Cookie: 0x12345678
+Type string: <string>
+Grr!: getbuf returned 0x0
+VALID
+NICE JOB!
+
+However, the supplied exploit string did not cause getbuf() to return the cookie, even though it did prompt the VALID NICE JOB! message.
+
+
+Second, it is not acceptable to jump directly to the validate() function calls.  The goal of this assignment is to understand the x86 program stack by manipulating and exploiting it - jumping directly to validate() in each phase circumvents the need for any such understanding, and you will not receive credit for solutions that do this.
+
+Have a good long weekend!

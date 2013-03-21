@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="51">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="malloc" displayName="malloc" projectFiles="true">
+      <itemPath>../amptjp-bal.rep</itemPath>
+      <itemPath>../clock.c</itemPath>
+      <itemPath>../clock.h</itemPath>
+      <itemPath>../config.h</itemPath>
+      <itemPath>../fcyc.c</itemPath>
+      <itemPath>../fcyc.h</itemPath>
+      <itemPath>../fsecs.c</itemPath>
+      <itemPath>../fsecs.h</itemPath>
+      <itemPath>../ftimer.c</itemPath>
+      <itemPath>../ftimer.h</itemPath>
+      <itemPath>../mdriver.c</itemPath>
+      <itemPath>../memlib.c</itemPath>
+      <itemPath>../memlib.h</itemPath>
+      <itemPath>../mm-naive.c</itemPath>
+      <itemPath>../mm.c</itemPath>
+      <itemPath>../mm.h</itemPath>
+      <itemPath>../README</itemPath>
+      <itemPath>../realloc-bal.rep</itemPath>
+      <itemPath>../realloc2-bal.rep</itemPath>
+      <itemPath>../short1-bal.rep</itemPath>
+      <itemPath>../short2-bal.rep</itemPath>
+      <itemPath>../test.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>/gpfs/main/home/qfang/course/cs033/malloc/Makefile</itemPath>
+      <itemPath>malloc_1-Makefile.mk</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>..</Elem>
+  </sourceRootList>
+  <projectmakefile>malloc_1-Makefile.mk</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>/gpfs/main/home/qfang/course/cs033/malloc</buildCommandWorkingDir>
+          <buildCommand>make -f Makefile</buildCommand>
+          <cleanCommand>make -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+        <requiredProjects>
+        </requiredProjects>
+      </makefileType>
+      <item path="../README">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../amptjp-bal.rep">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../clock.c">
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../clock.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../config.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../fcyc.c">
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../fcyc.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../fsecs.c">
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../fsecs.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../ftimer.c">
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../ftimer.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../mdriver.c">
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../memlib.c">
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../memlib.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../mm-naive.c">
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../mm.c">
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../mm.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../realloc-bal.rep">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../realloc2-bal.rep">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../short1-bal.rep">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../short2-bal.rep">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../test.c">
+        <itemTool>0</itemTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="51">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="lab07" displayName="lab07" projectFiles="true">
+      <itemPath>../hashset.c</itemPath>
+      <itemPath>../hashset.h</itemPath>
+      <itemPath>../string_fns.c</itemPath>
+      <itemPath>/home/qfang/course/cs033/lab07/string_fns.c</itemPath>
+      <itemPath>../string_fns.h</itemPath>
+      <itemPath>../tester.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>lab07_1-Makefile.mk</itemPath>
+      <itemPath>/gpfs/main/home/qfang/course/cs033/lab07/Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>..</Elem>
+  </sourceRootList>
+  <projectmakefile>lab07_1-Makefile.mk</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>/gpfs/main/home/qfang/course/cs033/lab07</buildCommandWorkingDir>
+          <buildCommand>make -f Makefile</buildCommand>
+          <cleanCommand>make -f Makefile clean</cleanCommand>
+          <executablePath>../tester</executablePath>
+        </makeTool>
+        <requiredProjects>
+        </requiredProjects>
+      </makefileType>
+      <item path="../hashset.c">
+        <itemExcluded>true</itemExcluded>
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../hashset.h">
+        <itemExcluded>true</itemExcluded>
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../string_fns.c">
+        <itemExcluded>true</itemExcluded>
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../string_fns.h">
+        <itemExcluded>true</itemExcluded>
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../tester.c">
+        <itemExcluded>true</itemExcluded>
+        <itemTool>0</itemTool>
+      </item>
+      <item path="/home/qfang/course/cs033/lab07/string_fns.c">
+        <itemTool>0</itemTool>
+        <cCompilerTool>
+          <includeDirectories>
+            <directoryPath>/home/qfang/course/cs033/lab07</directoryPath>
+          </includeDirectories>
+          <inheritIncValues>false</inheritIncValues>
+          <inheritPreValues>false</inheritPreValues>
+        </cCompilerTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

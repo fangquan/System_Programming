@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="51">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="shell_1" displayName="shell_1" projectFiles="true">
+      <itemPath>../process.c</itemPath>
+      <itemPath>../processIDs.c</itemPath>
+      <itemPath>../random.c</itemPath>
+      <itemPath>../sh.c</itemPath>
+      <itemPath>/home/qfang/course/cs033/shell_1/sh.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>/gpfs/main/home/qfang/course/cs033/shell_1/Makefile</itemPath>
+      <itemPath>shell_1_1-Makefile.mk</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>..</Elem>
+  </sourceRootList>
+  <projectmakefile>shell_1_1-Makefile.mk</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>/gpfs/main/home/qfang/course/cs033/shell_1</buildCommandWorkingDir>
+          <buildCommand>make -f Makefile</buildCommand>
+          <cleanCommand>make -f Makefile clean</cleanCommand>
+          <executablePath>../sh</executablePath>
+        </makeTool>
+        <requiredProjects>
+        </requiredProjects>
+      </makefileType>
+      <item path="../process.c">
+        <itemExcluded>true</itemExcluded>
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../processIDs.c">
+        <itemExcluded>true</itemExcluded>
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../random.c">
+        <itemExcluded>true</itemExcluded>
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../sh.c">
+        <itemExcluded>true</itemExcluded>
+        <itemTool>0</itemTool>
+      </item>
+      <item path="/home/qfang/course/cs033/shell_1/sh.c">
+        <itemTool>0</itemTool>
+        <cCompilerTool>
+          <includeDirectories>
+            <directoryPath>/home/qfang/course/cs033/shell_1</directoryPath>
+          </includeDirectories>
+          <inheritIncValues>false</inheritIncValues>
+          <preprocessorList>
+            <Elem>__GCC_HAVE_DWARF2_CFI_ASM=1</Elem>
+          </preprocessorList>
+          <inheritPreValues>false</inheritPreValues>
+        </cCompilerTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

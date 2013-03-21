@@ -1,0 +1,45 @@
+Lesson: always starts from main, and set breakpoint at functions. Be careful with the variable declaration 
+
+absval:
+	Breakpoint 2, print_absvals (numbers=0xbffff810, num=0) at absval.c:22
+	22		while (i < num) {
+	(gdb) print i
+	$4 = -1208083696
+
+i is crazy, numbers[i] goes seg fault. because i isn't initialized. 
+
+
+gcd:
+	eulers_method_gcd (a=200, b=100) at gcd.c:29
+	Breakpoint 2, eulers_method_gcd (a=1000, b=500) at gcd.c:29
+	29		while(b!=0) {
+	(gdb) print b
+	$5 = 500
+	(gdb) next 
+	30			int temp = a;
+	(gdb) next 
+	31			a = b;
+	(gdb) next 
+	32			b = temp%b;
+
+eulers_method_gcd is supposed to return an int, but it actually did not. 
+
+
+increment 
+
+Breakpoint 2, incr (n=0x1) at increment.c:6
+6		return ++n;
+
+the function incr is supposed to pass in integer, but n = atoi(argv[i]), n seems to be a pointer. Because the value of n is crazy.
+
+shout:
+	printf("%s ", to_uppercase(argv[i], strlen(argv[i])));
+
+This is the definition of to_uppercase:
+		char* to_uppercase(char* lowercase, int len) 
+	(1) The address of a local variable cannot be returned from a function.word[len+1] is a local function.
+	(2) word doesn't have a terminator sign '\0'.
+
+
+
+

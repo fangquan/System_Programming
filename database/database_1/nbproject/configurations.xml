@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="51">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="database" displayName="database" projectFiles="true">
+      <itemPath>../db.c</itemPath>
+      <itemPath>../db.h</itemPath>
+      <itemPath>../interface.c</itemPath>
+      <itemPath>../io_functions.c</itemPath>
+      <itemPath>../io_functions.h</itemPath>
+      <itemPath>../server.c</itemPath>
+      <itemPath>../timeout.c</itemPath>
+      <itemPath>../timeout.h</itemPath>
+      <itemPath>../window.c</itemPath>
+      <itemPath>../window.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>database_1-Makefile.mk</itemPath>
+      <itemPath>../Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>..</Elem>
+  </sourceRootList>
+  <projectmakefile>database_1-Makefile.mk</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>..</buildCommandWorkingDir>
+          <buildCommand>make -f Makefile</buildCommand>
+          <cleanCommand>make -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+        <requiredProjects>
+        </requiredProjects>
+      </makefileType>
+      <item path="../db.c">
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../db.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../interface.c">
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../io_functions.c">
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../io_functions.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../server.c">
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../timeout.c">
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../timeout.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../window.c">
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../window.h">
+        <itemTool>3</itemTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

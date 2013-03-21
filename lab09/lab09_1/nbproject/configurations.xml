@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="51">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="lab09" displayName="lab09" projectFiles="true">
+      <itemPath>../colors.c</itemPath>
+      <itemPath>../colors.h</itemPath>
+      <itemPath>../fractal.c</itemPath>
+      <itemPath>../fractal.h</itemPath>
+      <itemPath>../fractal_forked.c</itemPath>
+      <itemPath>../fractal_threaded.c</itemPath>
+      <itemPath>../image.c</itemPath>
+      <itemPath>../image.h</itemPath>
+      <itemPath>../main.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>lab09_1-Makefile.mk</itemPath>
+      <itemPath>/gpfs/main/home/qfang/course/cs033/lab09/Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>..</Elem>
+  </sourceRootList>
+  <projectmakefile>lab09_1-Makefile.mk</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>/gpfs/main/home/qfang/course/cs033/lab09</buildCommandWorkingDir>
+          <buildCommand>make -f Makefile</buildCommand>
+          <cleanCommand>make -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+        <requiredProjects>
+        </requiredProjects>
+      </makefileType>
+      <item path="../colors.c">
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../colors.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../fractal.c">
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../fractal.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../fractal_forked.c">
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../fractal_threaded.c">
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../image.c">
+        <itemTool>0</itemTool>
+      </item>
+      <item path="../image.h">
+        <itemTool>3</itemTool>
+      </item>
+      <item path="../main.c">
+        <itemTool>0</itemTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
